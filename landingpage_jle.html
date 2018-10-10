@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Summary: Latitude vs. X</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="landingpagestyles.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a id="latitude" href="landingpage_jle.html">Latitude</a>
+        </li>
+        <li style="float:right">
+          <a href="data_jle.html">Data</a>
+        </li>
+        <li style="float:right">
+          <a href="comparisonspage_jle.html">Comparison</a>
+        </li>
+        <li style="float:right" class="dropdown">
+                <a href="#" class="dropbtn">Plots</a>
+                <div class="dropdown-content">
+                  <a href="maxtemp_jle.html">Max Temperature</a>
+                  <a href="humidity_jle.html">Humidity</a>
+                  <a href="cloudiness_jle.html">Cloudiness</a>
+                  <a href="windspeed_jle.html">Wind Speed</a>
+                </div>
+        </li>
+      </ul>
+      <!-- <select id="nav-select">
+        <option value="Latitude">Latitude</option>
+        <option value="Data">Data</option>
+        <option value="Comparison">Comparison</option>
+        <option value="Plots">Plots</option>
+      </select> -->
+      <div class="clearfix"></div>
+    </nav>
+  </div>
+</body>
+
+ <!-- Row 2 -->
+ 
+ <div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h1>Summary: Latitude vs. X</h1>     
+            <hr>
+            <img id="mainimage" style="float:left" src="Fig1.png" alt="main image" position: "relative"; width="30%"> 
+            <br>
+            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator and in doing so, showcase some of the programming skills we learned along the way. To accomplish this analysis, we used Python to first pull data from the OpenWeatherMap API and then to assemble a dataset with data from over 500 cities.</p>
+            <p>After assembling the dataset with the Python library, Pandas, we used the Python library, Matplotlib, to plot various aspects of the weather vs. latitude. The various weather patterns we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations we created as part of the analysis, as wel as explanations and descriptions of any trends and correlations we observed.</p>
+        </div>
+        <div class="col-md-5">
+            <h1>Visualizations</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <a href="maxtemp_jle.html">  
+                          <img id="image1" class="img-thumbnail" src="Fig1.png" alt="image1";>
+                        </a>  
+                    </div>
+                    <br>
+                    <div>
+                        <a href="humidity_jle.html">
+                            <img id="image2" src="Fig2.png" class="img-thumbnail"  alt="image2">  
+                        </a>  
+                    </div>    
+                </div>     
+                <div class="col-md-6">
+                    <div>
+                        <a href="cloudiness_jle.html">
+                            <img id="image3" src="Fig3.png" class="img-thumbnail"  alt="image3";>  
+                        </a>   
+                    </div>
+                    <br>
+                    <div>
+                        <a href="windspeed_jle.html">
+                            <img id="image4" src="Fig4.png" class="img-thumbnail"  alt="image4";>  
+                        </a> 
+                    </div>  
+                </div>
+            </div>     
+        </div>
+    </div>
+ </div>
+
+ </html>
+        
